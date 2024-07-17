@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi - Neil's Website</title>
+    <style>
+        /* Same CSS as in index.html */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Neil</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hi.html">Hi</a>
+            <a href="newsletter.html">Newsletter</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Hi</h2>
+            <p>[insert text]</p>
+        </section>
+    </main>
+</body>
+</html>
