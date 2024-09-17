@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Content</title>
+    <title>Neil Warren-Bancquart</title>
     <style>
-        /* Common styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <div id="content"></div>
-
-    <script>
-    if (window.location.hostname === 'paulgrahamcrackers.com') {
-        document.getElementById('content').innerHTML = `
-            <h1>Paul Graham Crackers</h1>
-            <p>Buy a box of Paul Graham Crackers (TM) with a surprise Paul Graham essay inside!</p>
-            <p>Which will you get? WHO KNOWS?!?</p>
-            <p>This was always part of the plan. Mwahaha.</p>
-        `;
-    } else if (window.location.hostname === 'neilwb.com') {
-        document.getElementById('content').innerHTML = `
-            <h1>Website of Neil</h1>
-            <p>Buy a box of Paul Graham Crackers (TM) with a surprise Paul Graham essay inside!</p>
-            <p>Which will you get? WHO KNOWS?!?</p>
-            <p>This was always part of the plan. Mwahaha.</p>    
-        `;
-    } else {
-        document.getElementById('content').innerHTML = `
-            <h1>Welcome</h1>
-            <p>This is the default content.</p>
-        `;
-    }
-    </script>
+    <h1>Neil Warren-Bancquart</h1>
+    <p>I'm not sure I know what I'm doing, but at least I'm doing something.</p>
+    <ul>
+        <li>Send cold emails. There's always something to say or do.</li>
+        <li>Ship now. ~ 50% won't respond, but that's not a bad ratio.</li>
+        <li>Work on projects. It's just you and your future self.</li>
+        <li>You're allowed to do a lot of things. Bouncing off the world is data-rich.</li>
+        <li>I am open to trade. Better than "extracurricular activities".</li>
+        <li>My newsletter. Learn to finish something.</li>
+        <li>My LessWrong. Often you won't do interesting things because you didn't know you could.</li>
+        <li>My website. If you're good at something, email me at neil m warren [at] gmail.com</li>
+    </ul>
+    <p>I trade favors and money</p>
 </body>
 </html>
+
+
 
