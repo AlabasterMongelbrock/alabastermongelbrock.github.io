@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+</head>
+<body>
+    <h1>Cool Projects</h1>
+    <p>The following is a list of cool projects you could do. I haven't done everything on this list. <em>something</em>.</p>
+   
+    <p>Giant poster</p>
+    <ul>
+        <li>Email an artist you like and ask them for a sketch</li>
+        <li>Send it to the printer</li>
+    </ul>
+    <p>Ship now</p>
+    <ul>
+        <li>It's just you and your future self</li>
+        <li>Bouncing off the world is data-rich</li>
+    </ul>
+    <p>Work on projects</p>
+    <ul>
+        <li>Better than "extracuricular activities"</li>
+        <li>Learn to finish something</li>
+    </ul>
+    <p>You're allowed to do a lot of things</p>
+    <ul>
+        <li>Often you won't do interesting things because you didn't know you could</li>
+    </ul>
+    <p>I am open to trade</p>
+    <ul>
+        <li>If you're good at something, email me at neil m warren [at] gmail.com</li>
+        <li>I trade favors and money</li>
+    </ul>
+</body>
+</html>
