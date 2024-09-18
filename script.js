@@ -11,3 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.add('dark-mode');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidenoteToggles = document.querySelectorAll('.sidenote-toggle');
+    
+    sidenoteToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const sidenoteId = toggle.id.replace('-toggle', '');
+            const sidenote = document.getElementById(sidenoteId);
+            sidenote.style.display = sidenote.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+});
