@@ -54,8 +54,9 @@
 </body>
 
       
+                
 
-                <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Graham Crackers</title>
@@ -65,20 +66,62 @@
             margin: 0 auto;
             padding: 20px;
         }
-        .cracker-image {
-            display: block;
+        .cracker-image-container {
+            position: relative;
             width: 80%;
             max-width: 100%;
+            margin: 40px auto;
+            transform: perspective(1000px) rotateY(-20deg) rotateX(5deg);
+        }
+        .cracker-image {
+            display: block;
+            width: 100%;
             height: auto;
-            margin: 20px auto;
+        }
+        .cracker-image-container::before,
+        .cracker-image-container::after {
+            content: '';
+            position: absolute;
+            background: none;
+            border: 2px solid #000;
+        }
+        .cracker-image-container::before {
+            width: 30px;
+            height: calc(100% - 30px);
+            right: -32px;
+            top: 15px;
+            transform: skewY(-45deg);
+        }
+        .cracker-image-container::after {
+            width: calc(100% - 30px);
+            height: 30px;
+            left: 15px;
+            bottom: -32px;
+            transform: skewX(-45deg);
         }
     </style>
 </head>
 <body>
+    <div class="cracker-image-container">
         <img src="https://github.com/AlabasterMongelbrock/alabastermongelbrock.github.io/blob/main/images/Paul%20Graham%20Crackers%20(1).png?raw=true" alt="Paul Graham Crackers" class="cracker-image">
-</body>          
+    </div>
+</body>
 
+
+                
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
