@@ -54,8 +54,6 @@
 </body>
 
       
-                
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,42 +69,34 @@
             width: 80%;
             max-width: 100%;
             margin: 40px auto;
-            transform: perspective(1000px) rotateY(-20deg) rotateX(5deg);
+            perspective: 1000px;
         }
         .cracker-image {
             display: block;
             width: 100%;
             height: auto;
-        }
-        .cracker-image-container::before,
-        .cracker-image-container::after {
-            content: '';
-            position: absolute;
-            background: none;
-            border: 2px solid #000;
+            position: relative;
+            z-index: 2;
+            transform: translateZ(20px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
         .cracker-image-container::before {
-            width: 30px;
-            height: calc(100% - 30px);
-            right: -32px;
-            top: 15px;
-            transform: skewY(-45deg);
-        }
-        .cracker-image-container::after {
-            width: calc(100% - 30px);
-            height: 30px;
-            left: 15px;
-            bottom: -32px;
-            transform: skewX(-45deg);
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
     <div class="cracker-image-container">
-        <img src="https://github.com/AlabasterMongelbrock/alabastermongelbrock.github.io/blob/main/images/Paul%20Graham%20Crackers%20(1).png?raw=true" alt="Paul Graham Crackers" class="cracker-image">
+        <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/path/to/your/image.jpg" alt="Paul Graham Crackers" class="cracker-image">
     </div>
 </body>
-
 
                 
 </html>
